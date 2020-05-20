@@ -131,13 +131,13 @@ void timecmp(){
 
    if (t2_hour > t1_hour)
       printf("text1 is early\n");
-   else if (time1->tm_hour > time1->tm_hour)
+   else if (t2_hour < t1_hour)
       printf("text2 is early\n");
    else
    {
       if (t2_min > t1_min)
          printf("text1 is early\n");
-      else if (t1_hour > t2_hour)
+      else if (t2_min < t1_min)
          printf("text2 is early\n");
       else
          printf("same time\n");
